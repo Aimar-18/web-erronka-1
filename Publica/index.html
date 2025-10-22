@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="eu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AIMAITZ - Enpresa Teknologikoa</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="assets/aimaitz.ico">
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="#conocenos">🏠 Ezagutu gaitzazu</a></li>
+                    <li><a href="#servicios">💼 Zerbitzuak</a></li>
+                    <li><a href="#contacto">📧 Kontaktua</a></li>
+                </ul>
+            </nav>
+            <img src="assets/aimaitz.svg" alt="Aimaitz logotipoa" title="Aimaitz enpresa">
+        </header>
+
+        <!-- pagina principal -->
+        <section id="inicio">
+            <h1>Ongi etorri AIMAITZ-era</h1>
+            <p>Informática gazteko enpresa gara, teknologia, diseinu grafikoa eta marketing digitala konbinatuz negozioei interneten nabarmena izaten laguntzeko.</p>
+        </section>
+
+        <!-- konócenos -->
+        <section id="conocenos">
+            <article>
+                <h2>Nor gara?</h2>
+                <p>AIMAITZ teknologia-soluzio eskuragarriak eta sortzaileak eskaintzeko ideiarekin sortu zen. Digitala maite dugu: webguneak, irudiak, estrategiak eta zure marka hazteko behar duzun guztia diseinatzen dugu.</p>
+                <p>Pasioz lan egiten dugu, beti ikusgarriaren eta funtzionalaren arteko oreka bilatuz.</p>
+                
+                <!-- lista terminar el css -->
+                <h3>Gure taldea</h3>
+                <ul class="team-list">
+                    <li>Aimar - Ekaitz - Programatzailea</li>
+                    <li>Aimar - Ekaitz - Diseinatzailea</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios">
+            <h2>Gure zerbitzuak</h2>
+            <p>🔹<strong>Diseinu grafikoa:</strong> logotipoak, kartelak eta sare sozialetarako eduki bisualak sortzea.</p>
+            <p>🔹<strong>Web garapena:</strong> orrialde modernoak, azkarrak eta gailu guztietara egokituta.</p>
+            <p>🔹<strong>Marketing digitala:</strong> publizitate-kanpainak, sare sozialak eta bilatzaileen posizionamendua.</p>
+            
+            <!-- tabla de precios -->
+            <h3>Prezioak</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Zerbitzua</th>
+                        <th>Deskribapena</th>
+                        <th>Prezioa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Web Diseinua</td>
+                        <td>Web sinplea (1-3 orriak)</td>
+                        <td>500€</td>
+                    </tr>
+                    <tr>
+                        <td>Web konplexua (+5 orriak)</td>
+                        <td>1500€</td>
+                    </tr>
+                    <tr>
+                        <td>Diseinu grafikoa</td>
+                        <td>Logotipoa + karta</td>
+                        <td>300€</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Marketing kanpaina osoa</td>
+                        <td>800€</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Video si eso quitar, queda mal -->
+            <h3>Nola lan egiten dugu?</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/holaaaaa" title="YouTube bideo" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!-- CONTACTO FORMULARIO -->
+        <section id="contacto">
+            <h2>Kontaktua</h2>
+            <p>📧 aimaitz@empresa.com</p>
+            <p>📍 Zornotza, Bizkaia</p>
+            <p>Jarraitu gaitzazu sare sozialetan gure proiektuak eta berrikuntzak ezagutzeko.</p>
+            
+            <!-- mejorar el css -->
+            <h3>Mezua bidali</h3>
+            <form action="#" method="post">
+                <label for="izena">Izena:</label>
+                <input type="text" id="izena" name="izena" placeholder="Izena" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="adibidea@gmail.com" required>
+                
+                <label for="telefono">Telefonoa:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="12345678">
+                
+                <label>Zer zerbitzu behar duzu?</label>
+                
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="web" name="web">
+                        <label for="web">Web diseinua</label>
+                    </div>
+                    
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="diseno" name="diseno">
+                        <label for="diseno">Diseinu grafikoa</label>
+                    </div>
+                    
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="marketing" name="marketing">
+                        <label for="marketing">Marketing</label>
+                    </div>
+                </div>
+                
+                <label for="mezua">Mezua:</label>
+                <textarea id="mezua" name="mezua" placeholder="Idatzi zure mezua hemen..."></textarea>
+                
+                <button type="submit">Bidali</button>
+            </form>
+
+            <!-- mapa del fp -->
+            <h3>Non gaude?</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5814.733780011263!2d-2.7249987!3d43.222766799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e369c4e0d1637%3A0x78ccbf7525105ab1!2sCIFP%20ZORNOTZA%20LHII!5e0!3m2!1ses!2ses!4v1761038316054!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <img src="assets/aimaitz.svg" alt="Logo txikia" title="Aimaitz" width="30">
+            <p>© 2025 AIMAITZ - Erronka Web Garapena</p>
+            <p>Zornotza | Bizkaia</p>
+        </footer>
+    </body>
+</html>

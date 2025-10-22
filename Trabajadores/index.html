@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="eu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AIMAITZ - Langileen Ataria</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="assets/aimaitz.ico">
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">🔐 Langileen Sarrera</a></li>
+                </ul>
+            </nav>
+            <img src="assets/aimaitz.svg" alt="Aimaitz logotipoa" title="Aimaitz enpresa">
+        </header>
+
+        <!-- Login Section -->
+        <section id="login">
+            <h1>🔐 Langileen Ataria</h1>
+            <p>Sartu zure kredentzialak fitxategiak deskargatzeko</p>
+            
+            <div class="login-container">
+                <form id="loginForm">
+                    <div class="logo-container">
+                        <img src="assets/aimaitz.svg" alt="Aimaitz Logo" class="login-logo">
+                    </div>
+                    
+                    <h2>Hasi Saioa</h2>
+                    
+                    <div class="form-group">
+                        <label for="username">👤 Erabiltzailea:</label>
+                        <input type="text" id="username" name="username" placeholder="Erabiltzailea" required autocomplete="username">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">🔒 Pasahitza:</label>
+                        <input type="password" id="password" name="password" placeholder="Pasahitza" required autocomplete="current-password">
+                    </div>
+                    
+                    <div id="error-message" class="error-message"></div>
+                    
+                    <button type="submit" class="login-button">Sartu</button>
+                    
+                    <div class="info-box">
+                        <p>ℹ️ <strong>Informazioa:</strong></p>
+                        <p>Langileen ataria bakarrik baimendutako pertsonarentzat da.</p>
+                        <p>Arazo bat baduzu, jarri harremanetan administrazioarekin.</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <img src="assets/aimaitz.svg" alt="Logo txikia" title="Aimaitz" width="30">
+            <p>© 2025 AIMAITZ - Langileen Ataria</p>
+            <p>Zornotza | Bizkaia</p>
+            <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.8;">🔒 Konexio segurua</p>
+        </footer>
+
+        <script src="js/login.js"></script>
+    </body>
+</html>

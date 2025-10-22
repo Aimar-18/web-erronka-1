@@ -1,0 +1,356 @@
+/* Estilos específicos para el panel de archivos */
+
+/* Panel de archivos */
+#files-panel {
+    min-height: calc(100vh - 10vh - 100px);
+    padding: 30px;
+}
+
+/* Cabecera de bienvenida */
+.welcome-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Botón de logout */
+.logout {
+    background-color: rgba(255, 0, 0, 0.3) !important;
+}
+
+.logout:hover {
+    background-color: rgba(255, 0, 0, 0.5) !important;
+}
+
+/* Área de subida */
+.upload-area {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.upload-area.hidden {
+    display: none;
+}
+
+.upload-box {
+    text-align: center;
+}
+
+.upload-box h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+#fileInput {
+    display: none;
+}
+
+.file-label {
+    display: block;
+    padding: 40px;
+    border: 3px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.file-label:hover {
+    border-color: #ff6b9d;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.file-preview-list {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.file-preview-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upload-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ff6b9d;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #ff4081;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Barra de búsqueda */
+.search-bar {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+#searchInput:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(255, 107, 157, 0.5);
+}
+
+/* Contenedor de archivos */
+.files-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tarjeta de archivo */
+.file-card {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.file-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.file-icon {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.file-name {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    word-break: break-word;
+}
+
+.file-info {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.file-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-view, .btn-download, .btn-delete {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-view {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.btn-view:hover {
+    background-color: #45a049;
+}
+
+.btn-download {
+    background-color: #2196F3;
+    color: white;
+}
+
+.btn-download:hover {
+    background-color: #0b7dda;
+}
+
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #da190b;
+}
+
+/* Visor de archivos */
+.file-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.file-viewer.hidden {
+    display: none;
+}
+
+.viewer-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    max-width: 90%;
+    max-height: 90%;
+    width: 1000px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.close-viewer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-viewer:hover {
+    background-color: rgba(255, 0, 0, 1);
+    transform: rotate(90deg);
+}
+
+.viewer-header {
+    padding: 20px;
+    background-color: rgba(255, 107, 157, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 107, 157, 0.3);
+}
+
+.viewer-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.viewer-body {
+    padding: 20px;
+    overflow: auto;
+    flex: 1;
+    background-color: white;
+}
+
+.viewer-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.viewer-body iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+    border-radius: 8px;
+}
+
+.viewer-body video {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.viewer-body audio {
+    width: 100%;
+}
+
+/* Mensaje de no archivos */
+.no-files {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .files-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .file-icon {
+        font-size: 3rem;
+    }
+    
+    .viewer-content {
+        max-width: 95%;
+        max-height: 95%;
+    }
+}

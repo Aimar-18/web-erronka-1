@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="eu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AIMAITZ - Jurivisaida Panel</title>
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/files.css">
+        <link rel="icon" type="image/x-icon" href="../../assets/aimaitz.ico">
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header id="header">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">📁 Fitxategiak</a></li>
+                    <li><a href="#" id="uploadBtn">⬆️ Igo fitxategia</a></li>
+                    <li><a href="../../index.html" class="logout">🚪 Irten</a></li>
+                </ul>
+            </nav>
+            <img src="../../assets/aimaitz.svg" alt="Aimaitz logotipoa" title="Aimaitz enpresa">
+        </header>
+
+        <!-- Panel de archivos -->
+        <section id="files-panel">
+            <div class="welcome-header">
+                <h1>👋 Ongi etorri, Jurivisaida</h1>
+                <p>Hemen zure fitxategi guztiak aurkituko dituzu</p>
+            </div>
+
+            <!-- Área de subida de archivos -->
+            <div id="upload-area" class="upload-area hidden">
+                <div class="upload-box">
+                    <h2>⬆️ Fitxategia igo</h2>
+                    <input type="file" id="fileInput" multiple accept="*/*">
+                    <label for="fileInput" class="file-label">
+                        📎 Hautatu fitxategiak edo arrastatu hona
+                    </label>
+                    <div id="file-list" class="file-preview-list"></div>
+                    <div class="upload-buttons">
+                        <button id="uploadSubmit" class="btn-primary">Igo</button>
+                        <button id="uploadCancel" class="btn-secondary">Ezeztatu</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Buscador -->
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="🔍 Bilatu fitxategiak...">
+            </div>
+
+            <!-- Lista de archivos -->
+            <div class="files-container" id="filesContainer">
+                <!-- Los archivos se cargarán dinámicamente aquí -->
+            </div>
+
+            <!-- Visor de archivos -->
+            <div id="file-viewer" class="file-viewer hidden">
+                <div class="viewer-content">
+                    <button class="close-viewer" id="closeViewer">✖</button>
+                    <div class="viewer-header">
+                        <h3 id="viewerFileName">Fitxategia</h3>
+                        <button class="btn-download" id="viewerDownload">⬇️ Deskargatu</button>
+                    </div>
+                    <div class="viewer-body" id="viewerBody">
+                        <!-- El contenido del archivo se mostrará aquí -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <img src="../../assets/aimaitz.svg" alt="Logo txikia" title="Aimaitz" width="30">
+            <p>© 2025 AIMAITZ - Langileen Ataria</p>
+            <p>Zornotza | Bizkaia</p>
+        </footer>
+
+        <script src="../../js/files.js"></script>
+    </body>
+</html>
