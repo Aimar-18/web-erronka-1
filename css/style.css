@@ -139,7 +139,7 @@ td {
 }
 
 /* Iframe para el video que no va y el mapa */
-img {
+#servicios img, #contacto iframe {
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -233,4 +233,5 @@ footer p {
 footer img {
     filter: brightness(0) invert(1);
     margin-bottom: 10px;
+    width: 60px;
 }
