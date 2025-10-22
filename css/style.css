@@ -139,11 +139,11 @@ td {
 }
 
 /* Iframe para el video que no va y el mapa */
-iframe {
+img {
     margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    max-width: 100%;
+    max-width: 80%;
 }
 
 /* Formulario de contacto */
