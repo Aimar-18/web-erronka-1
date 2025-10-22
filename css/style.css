@@ -7,7 +7,7 @@
 /* Fondo general del body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(231deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background: linear-gradient(231deg, rgb(107, 73, 88) 0%, rgba(148,187,233,1) 100%);
     background-attachment: fixed;
     color: white;
     text-align: center;
