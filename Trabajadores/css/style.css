@@ -242,6 +242,7 @@ footer p {
 footer img {
     filter: brightness(0) invert(1);
     margin-bottom: 10px;
+    width: 60px;
 }
 
 /* Responsive */

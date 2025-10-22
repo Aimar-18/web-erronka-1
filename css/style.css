@@ -177,6 +177,26 @@ textarea {
     color: black;
 }
 
+/* Para que los checkbox esten alineados */
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Checkboxes estilizados */
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #ff6b9d;
+}
+.checkbox-item label {
+    margin: 0;
+    cursor: pointer;
+}
+
 /* Boton de enviar */
 button {
     background-color: #ff6b9d;
@@ -193,27 +213,6 @@ button {
 button:hover {
     background-color: #ff4081;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Para que los checkbox esten alineados */
-.checkbox-item {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-}
-
-/* Checkboxes estilizados */
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    accent-color: #ff6b9d;
-}
-
-.checkbox-item label {
-    margin: 0;
-    cursor: pointer;
 }
 
 /* Footer - bloque ultimo */
