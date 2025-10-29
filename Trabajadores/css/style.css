@@ -242,29 +242,3 @@ footer img {
     margin-bottom: 10px;
     width: 60px;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    #header img {
-        right: 20px;
-        width: 40px;
-    }
-    
-    #header li a {
-        font-size: 0.9rem;
-        padding: 6px 12px;
-    }
-    
-    #login {
-        margin: 20px;
-        padding: 30px 15px;
-    }
-    
-    .login-container {
-        padding: 25px;
-    }
-    
-    #login h1 {
-        font-size: 2rem;
-    }
-}
